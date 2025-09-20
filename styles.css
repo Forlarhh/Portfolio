@@ -211,3 +211,19 @@ ul {
 .resume-content ul li {
   margin-bottom: 0.5rem;
 }
+
+.skill {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+.skill i {
+  font-size: 1.2rem; /* Adjust icon size */
+}
