@@ -1,0 +1,102 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #7c3aed;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #071023 0%, #071827 100%);
+  color: #e6eef6;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.6);
+}
+
+h1 { font-size: 26px; }
+.lead { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.contacts { font-size: 13px; margin-top: 6px; color: var(--muted); }
+.actions { margin-left: auto; display: flex; gap: 10px; }
+
+.btn {
+  background: var(--accent);
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(124,58,237,0.5); }
+
+.card {
+  background: rgba(255,255,255,0.03);
+  padding: 18px;
+  border-radius: 14px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-4px); }
+
+.skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip {
+  background: rgba(255,255,255,0.05);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 12px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+form button { margin-top: 10px; }
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
